@@ -1,0 +1,320 @@
+/***********************************
+GENERAL
+***********************************/
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: 200;
+  text-align: center;
+  line-height: 1.65;
+  background-image: url('../img/main-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom left;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 8%;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/***********************************
+MAIN HEADER
+***********************************/
+
+.main-header {
+  margin: 0 8% 50px;
+  padding: 63px 0 0;
+  font-size: 1.25em;
+}
+
+.profile-photo {
+  margin-bottom: 35px;
+  max-width: 175px;
+  border-radius: 100%;
+}
+
+.intro {
+  margin: 0 0 20px;
+}
+
+.social-icon {
+  width: 36px;
+  margin: 0 4.5% 0;
+}
+
+
+
+/***********************************
+GALLERY
+***********************************/
+
+
+
+.gallery ul {
+  margin: 0;
+  padding: 0;
+}
+
+.gallery li {
+  list-style: none;
+  margin: 11% 0 11%;
+  border-radius: 4px;
+}
+
+.gallery img {
+  border-radius: 4px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.gallery p {
+  font-size: 1.05em;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 3% 0 3.5%;
+}
+
+hr {
+  margin: 70px auto 0;
+  max-width: 10em;
+  display: block;
+}
+
+/***********************************
+MAIN FOOTER
+***********************************/
+
+.main-footer {
+  padding: 50px 0 60px;
+}
+
+.main-footer p {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+
+
+/***********************************
+COLORS
+***********************************/
+
+
+
+/* GENERAL COLORS*/
+body {
+  background-color: #000;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+a:link,
+a:visited {
+  color: #c9c3ce;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.35);
+}
+
+a:hover {
+  color: #fff;
+  border-bottom-color: transparent;
+}
+
+a {
+  transition: border-bottom-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+/* MAIN HEADER COLORS*/
+strong {
+  color: #fff;
+}
+
+.main-header .social-link {
+  border: none;
+}
+
+.profile-photo {
+  box-shadow: 0 0 20px 1px rgba(255, 255, 255, 0.50);
+}
+
+/* GALLERY COLORS*/
+
+.gallery a {
+  color: #fff;
+  border: none;
+}
+
+.gallery li {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.gallery li:hover {
+  background-color: rgba(255, 255, 255, 0.20);
+  box-shadow: 0 0 0.5em 0 #FF6382;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #fff;
+  opacity: 0.25;
+}
+
+
+
+/***********************************
+MEDIA QUERIES
+***********************************/
+
+@media (min-width: 30em) {
+
+  /* GENERAL */
+  .container {
+    padding-bottom: 420px;
+  }
+
+  /* MAIN HEADER */
+  .main-header {
+    font-size: 1.325em;
+    line-height: 1.5;
+    margin-bottom: 40px;
+  }
+
+  .social-icon {
+    width: 42px;
+  }
+
+  /* GALLERY */
+  .gallery div {
+    float: left;
+    max-width: 31.3333%;
+  }
+  .gallery .col2 {
+    margin: 0 3%;
+  }
+
+  .gallery li {
+    margin-bottom: 3%;
+  }
+
+  .gallery p {
+    font-size: 0.9em;
+  }
+
+  /* HR */
+  hr {
+    clear: both;
+  }
+
+  /* COLORS */
+  .profile-photo {
+    box-shadow: 0 0 25px 1px rgba(255, 255, 255, 0.70);
+
+}
+
+@media (min-width: 48em) {
+
+  /* GENERAL */
+  .container {
+    padding-bottom: 610px;
+  }
+
+  /* MAIN HEADER */
+  .main-header {
+    font-size: 1.6em;
+  }
+
+  .social-icon {
+    width: 48px;
+  }
+
+}
+
+@media (min-width: 64em) {
+
+  /* GENERAL */
+  .container {
+    padding-bottom: 780px;
+  }
+
+  /* MAIN HEADER */
+  .main-header {
+    font-size: 1.8em;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 25px;
+  }
+
+  .social-icon {
+    width: 54px;
+    margin: 0 3.5% 0;
+  }
+
+  /* GALLERY */
+  .gallery p {
+    font-size: 1em;
+  }
+
+  /* MAIN FOOTER */
+  .main-footer p {
+    font-size: 1em;
+  }
+
+}
+
+@media (min-width: 85.375em) {
+
+  /* GENERAL */
+  .container {
+    padding-bottom: 1060px;
+  }
+
+  /* MAIN HEADER */
+  .main-header {
+    margin-left: 19%;
+    margin-right: 19%;
+    margin-bottom: 42px;
+    padding: 115px 0 0;
+    font-size: 2em;
+  }
+
+  .social-icon {
+    width: 60px;
+  }
+
+  /* GALLERY */
+  .gallery p {
+    font-size: 1.1em;
+  }
+
+  /* MAIN FOOTER */
+  .main-footer {
+    padding: 50px 0 110px;
+  }
+
+}
