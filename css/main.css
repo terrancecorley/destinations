@@ -130,7 +130,6 @@ COLORS
 
 /* GENERAL COLORS*/
 body {
-  background-color: #000;
   color: rgba(255, 255, 255, 0.65);
 }
 
@@ -235,7 +234,7 @@ MEDIA QUERIES
   .profile-photo {
     box-shadow: 0 0 25px 1px rgba(255, 255, 255, 0.70);
   }
-  
+
 }
 
 @media (min-width: 48em) {
